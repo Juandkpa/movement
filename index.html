@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color:whitesmoke;
+    }
+    .container {
+        padding: 100px 10px 100px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #motion-demo {        
+        display: none;
+        offset-path: path('M 400 350 C 650 350 500 150 800 250 ');
+        animation: move 3000ms infinite alternate ease-in-out;
+        width: 80px;
+        height: 80px;
+        background: cyan;
+    }
+    .escene {
+        width: 300px;
+        height: 210px;
+        background-image: url('img/nat.gif');   
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+        border:1px thistle solid;
+        border-radius: 10px;
+    }
+    .two {        
+        visibility: hidden;
+    }
+    
+
+@keyframes move {
+  0% {q
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+</style>
+<body>
+    <div>                      
+        <img id="motion-demo" src="https://s7d5.scene7.com/is/image/PaperSource/34302207?resMode=sharp2&op_usm=1,1,15,1&fmt=jpg&qlt=80&fit=constrain,1&wid=262&hei=262" alt="">  
+    </div>
+    <div class="container">                
+        <div class="escene one"></div>
+                
+        <div class="escene two"></div>
+    </div>  
+    <script src="index.js"></script>      
+</body>
+</html>
